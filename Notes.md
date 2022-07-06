@@ -24,3 +24,7 @@ Base Class Library
 Nuget packages
 - Nuget.org is a platform to provide the versioning, developer information, library
 - Nuget package manager can help create the library and install them in a project
+
+`struct` type cannot inherit from base struct
+
+`record` type from C# 9 fast gaining attractions, is useful for microservices and multilayer applications. Use it for immutable objects
