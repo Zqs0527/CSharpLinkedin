@@ -4,3 +4,23 @@ All .NET languages compile to MSIL
 ![](images/csharpcompiling.png)
 
 Use ILDASM to open the dlls
+
+.NET runtime is responsible to run the MSIL or the .NET executables
+
+With recent .NET Core runtime, you can run your program in Windows, Linux and Mac os platforms
+
+Base Class Library
+- Dates
+- Math
+- Strings
+- File IO
+- Data access
+- TCP
+- SMTP
+- HTTP
+- Arrays
+
+
+Nuget packages
+- Nuget.org is a platform to provide the versioning, developer information, library
+- Nuget package manager can help create the library and install them in a project
