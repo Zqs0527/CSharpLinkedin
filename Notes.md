@@ -28,3 +28,34 @@ Nuget packages
 `struct` type cannot inherit from base struct
 
 `record` type from C# 9 fast gaining attractions, is useful for microservices and multilayer applications. Use it for immutable objects
+
+```
+public class Employee: IPerson
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Id { get; set ; }
+
+    <!-- public Employee() -->
+    <!-- { -->
+<!--  -->
+    <!-- } -->
+
+    public Employee(string firstName, string lastName)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+    }
+}
+
+public class Manager: Employee,IPerson
+{
+    public Manager():base("unknown","unknown")
+    {
+
+    }
+    public int NumberOfDirectReports{get;set;}
+}
+```
+
+One class can inherint multiple interfaces but one base class. Base class must have a default constructor (line 39-40). Other way to fix the compiling error is having line 53-56. Line 53-56 don't mean the program works, but just compiling.
