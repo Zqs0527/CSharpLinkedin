@@ -4,6 +4,15 @@
     {
         static void Main(string[] args)
         {
+            Employee employee = new Employee("Yuan", "Chen");
+
+            Employee employeeTwo = new Employee
+            {
+                FirstName = "Qianshuang",
+                LastName = "Zhang",
+                Id = 56
+            };
+            Console.WriteLine($"{employee.FirstName} is you...");
             Console.WriteLine("What is your name?");
             var name = Console.ReadLine();
             var currentDate = DateTime.Now;

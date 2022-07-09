@@ -59,3 +59,14 @@ public class Manager: Employee,IPerson
 ```
 
 One class can inherint multiple interfaces but one base class. Base class must have a default constructor (line 39-40). Other way to fix the compiling error is having line 53-56. Line 53-56 don't mean the program works, but just compiling.
+
+Object initialization
+```
+Employee employeeTwo = new Employee
+{   
+    FirstName = "Qianshuang",
+    LastName = "Zhang",
+    Id = 56
+};
+```
+Above will call the default constructor of `Employee`. Curly brace will set the properties
