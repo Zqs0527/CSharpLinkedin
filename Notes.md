@@ -70,3 +70,33 @@ Employee employeeTwo = new Employee
 };
 ```
 Above will call the default constructor of `Employee`. Curly brace will set the properties
+
+If the class property is given the `init`, it means it can only be set at the initialization stage.
+```
+public class PremierCustomer: Customer
+{
+    public PremierCustomer(byte level)
+    {
+        CustomerLevel = level;
+    }
+    public byte CustomerLevel {get; init;}
+}
+
+```
+If a property has a `private` qualifier before setting, it means the property can only be set within the class.
+```
+public class PremierCustomer: Customer
+{
+    public PremierCustomer(byte level)
+    {
+        CustomerLevel = level;
+    }
+    public string NameOfTheCustomer {get; private set;}
+    public byte CustomerLevel {get; init;}
+    public void SetTheNameOfTheCustomer(string name)
+    {
+        NameOfTheCustomer = name;
+    }
+}
+```
+The property can only be set by calling `SetTheNameOfTheCustomer()` method.
