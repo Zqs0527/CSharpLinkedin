@@ -100,3 +100,9 @@ public class PremierCustomer: Customer
 }
 ```
 The property can only be set by calling `SetTheNameOfTheCustomer()` method.
+
+With the `ref` keyword, if the variable with `ref` is passed to the method, when the variable is changed, the change will be persisted to the outside of the method. 
+
+Without the `ref` keyword, only the object which reference is pointing to can be changed.
+
+For the `struct`, if make a copy a struct object, the copy will create an entirely new object. If the struct object is passed to the method, it will just be the copy of the object the reference pointing to.
