@@ -106,3 +106,5 @@ With the `ref` keyword, if the variable with `ref` is passed to the method, when
 Without the `ref` keyword, only the object which reference is pointing to can be changed.
 
 For the `struct`, if make a copy a struct object, the copy will create an entirely new object. If the struct object is passed to the method, it will just be the copy of the object the reference pointing to.
+
+For the class type equality checking, it checks the reference, i.e. even the value is the same, differenct reference will result in false comparison. Struct and record are value type checking
