@@ -1,6 +1,6 @@
 ﻿namespace LinkedIn.Essentials
 {
-    static class Constants
+     static class Constants
     {
         private static string connectionString;
         public static readonly string CONFIG_SERVER_NAME = "TargetServer";

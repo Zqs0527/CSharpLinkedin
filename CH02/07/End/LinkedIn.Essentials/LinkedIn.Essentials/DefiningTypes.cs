@@ -66,7 +66,7 @@ public class Manager : Employee, IPerson
         return true;
     }
 
-    public new void Terminate(DateTime terminationEffectiveDate)
+    public override void Terminate(DateTime terminationEffectiveDate)
     {
         //perform manager specific termination steps
         Console.WriteLine("Manager terminated");

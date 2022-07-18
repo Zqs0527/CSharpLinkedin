@@ -27,7 +27,7 @@ Nuget packages
 
 `struct` type cannot inherit from base struct
 
-`record` type from C# 9 fast gaining attractions, is useful for microservices and multilayer applications. Use it for immutable objects
+`record` type from C# 9 fast gaining attractions, is useful for microservices and multilayer applications. Use it for immutable objects. It is used for data transfer objects
 
 ```
 public class Employee: IPerson
@@ -118,3 +118,4 @@ Abstract class
 - The `virtual` method has implementation in the base class. The derived class can either override the method or have a new instance of the method
 
 Static class
+- Make a static constructor. It means when this class is firtly used the static constructor will be called. One can use the static class in on instances classes
