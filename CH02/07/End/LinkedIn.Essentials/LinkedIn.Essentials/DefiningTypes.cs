@@ -18,7 +18,7 @@ public abstract class Employee : IPerson
     public virtual DateTime EndDate { get; set; }
 
     //abstract property
-    public abstract int EmployeeId { get; }
+    public abstract int EmployeeId { get;}
 
     //derived must implement
     public abstract bool ProcessPayroll();  
@@ -42,7 +42,7 @@ public abstract class Employee : IPerson
 public class ShiftWorker : Employee
 {
     public TimeOnly ShiftStartTime { get; set; }
-    public override int EmployeeId { get => 1; }
+    public override int EmployeeId { get=>1; }
 
     public override bool ProcessPayroll()
     {

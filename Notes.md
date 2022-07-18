@@ -108,3 +108,13 @@ Without the `ref` keyword, only the object which reference is pointing to can be
 For the `struct`, if make a copy a struct object, the copy will create an entirely new object. If the struct object is passed to the method, it will just be the copy of the object the reference pointing to.
 
 For the class type equality checking, it checks the reference, i.e. even the value is the same, differenct reference will result in false comparison. Struct and record are value type checking
+
+Abstract class
+- The properties can also be marked as `virtual` or `abstract`
+    - `public virtual DateTime EndDate {get; set;}`
+
+- The `abstract` method must be implemented in the derived class. There is no implementation in the base class
+
+- The `virtual` method has implementation in the base class. The derived class can either override the method or have a new instance of the method
+
+Static class

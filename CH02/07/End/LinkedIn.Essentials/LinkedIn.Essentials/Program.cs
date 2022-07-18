@@ -12,6 +12,7 @@ ShiftWorker sw = new ShiftWorker
 
 Console.WriteLine("=============Shift Worker=============");
 bool payrollProcessed = sw.ProcessPayroll();
+int idEmployee = sw.EmployeeId;
 sw.Terminate(DateTime.Now);
 bool active = sw.IsActive();
 Console.WriteLine();
